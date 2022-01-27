@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>POST Request</title>		
+</head>
+<body>
+		<form>
+				<fieldset>
+					<label>Please Enter Your Favorite Color and Shape</label>
+					<fieldset>
+						<p>
+							<label>Favorite Color: <input type="text" name="colorName" id="color" size="30"></label>
+						</p>
+						<p>
+							<label>Favorite Shape: <input type="text" name="shapeName" id="shape" size="30"></label>
+						</p>
+						<p>
+							<input type="submit" name="submit" id="submitInfo">
+						</p>
+					</fieldset>
+				</fieldset>
+			</form>
+		
+		<table>
+			<caption>
+				<th>Favorites Results</th>
+			</caption>
+			
+			<tr>
+				<td>Favorite Color:</td>
+				<td id="favColor"></td>
+			</tr>
+
+			<tr>
+				<td>Favorite Shape:</td>
+				<td id="favShape"></td>
+			</tr>
+		</table>
+		<script src="post.js"></script>
+
+	</body>
+</html>

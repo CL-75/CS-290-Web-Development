@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <body>
+    <h1>THE FLORIDA PANTHERS</h1>
+
+    <div class="HomeBar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="roster.html">Roster</a>
+      <a href="schedule.html">Schedule</a>
+    </div>
+
+    <div class="pics">
+      <img class="CarouselPics" src="image3.jpg"> <!-- image credit to sportslogos.net -->
+      <img class="CarouselPics" src="image1.jpg"> <!-- image credit to NHL.com -->
+      <img class="CarouselPics" src="image2.jpg"> <!-- image credit to twitter.com -->
+      <img class="CarouselPics" src="image4.jpg"> <!-- image credit to NHL.com -->
+    </div>
+    <br>
+    <caption>Welcome to my small Florida Panthers website!</caption>
+    <br>
+    <br>
+    <div class="HomeBar2">
+      <h1> --- UPCOMING EVENTS --- </h1>
+    </div>
+    <div class="scroller">
+      <ul>
+        <li> HOME GAME: vs Tampa Bay Lighting, 10/5 @ 7pm</li>
+        <li> Reading with the Panthers, 10/6</li>
+        <li> 3rd Annual Cats and Cocktails, 10/9</li>
+        <li> AWAY GAME: vs NY Islanders, 10/12 @ 7pm</li>
+        <li> AWAY GAME: vs NJ Devils, 10/14 @ 1pm</li>
+        <li> Community Outreach Dinner, 10/15</li>
+        <li> Toy Drive, 10/17</li>
+        <li> HOME GAME: vs Colorado Avalanche, 10/18 @ 7pm</li>
+
+      </ul>
+    </div>
+    <h3>Want to receive updates on upcoming games, events, and other Florida Panthers info? Enter your email below to subsribe to our newsletter!</h3>
+    <input type="text" id=sub>
+    <input type="button" value="Sign Me Up!" onclick="subscribe()">
+    <p id="subEmail"></p>
+
+    <script>
+      function subscribe() {
+        var sub = document.getElementById("sub").value;
+        var output = "Thanks for signing up! You will receive a confirmation email soon.";
+        var req = new XMLHttpRequest();
+        var site = "http://httpbin.org/post";
+        req.open("POST", site, true);
+        req.setRequestHeader("Content-Type", "application/json");
+        req.addEventListener("load", function() {
+          if (req.status >= 200 && req.status < 400) {
+            var res = JSON.parse(req.responseText);
+            document.getElementById("subEmail").innerHTML = res.data;
+          }
+        });
+
+        req.send(JSON.stringify(output));
+
+      }
+
+    </script>
+    <br>
+
+    <h5>Not a fan of the Panthers? Want to find another team? Try the NHL's homepage found <a href="https://www.nhl.com/">here.</a></h5>
+
+ <script src="script.js"></script>
+  </body>
+
+</html>

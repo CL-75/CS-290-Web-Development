@@ -1,0 +1,65 @@
+/* Author: Casey Levy */
+/* Program Name: HW #1 HTML/CSS */
+/* Date 6/28/19 8?
+/* Course: CS 290 */
+
+table#table {
+  border: 1px solid black;
+}
+
+table#table td {
+  border: 1px solid black;
+}
+
+table#table th {
+  border: 1px solid black;
+}
+
+table#table tbody tr:nth-of-type(even) {
+  background-color: #FF0000;
+}
+
+table#table tbody tr:nth-of-type(3) {
+  background-color: #FFDF00;
+}
+
+table#table tbody tr:nth-of-type(5) {
+  background-color: #FFDF00;
+}
+
+.outerdiv {
+  margin-left: 0px;
+  width: 75%;
+  background-color: pink;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.innerdiv {
+  background-color: #ADD8E6;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  border: 1px solid black;
+  padding: 3px;
+  display: block;
+  margin: 0 auto;
+}
+
+section.radio {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 0 auto;
+  display: block;
+}
+
+section.radio label {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding: 3px;
+}

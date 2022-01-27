@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title> AJAX Interactions </title>
+</head>
+<body>
+		<form>
+			<fieldset>
+				<legend> Open Weather Map</legend>
+				<label>Please Enter a US Zip Code or City with Country Code</label>
+				<fieldset>
+					<p>
+						<label>Zip Code: <input type="text" name="zip" id="zipCode" size="9"></label>
+					</p>
+					<p>
+						<label>City: <input type="text" name="city" id="city" size="30"></label>
+					</p>
+
+					<p>
+						<input type="submit" name="submit" id="getWeather">
+					</p>
+				</fieldset>
+			</fieldset>
+		</form>
+
+		<table>
+			<caption>
+				<th>Weather Results</th>
+			</caption>
+
+			<tr>
+				<td>Temperature (F):</td>
+				<td id="temp"></td>
+			</tr>
+
+			<tr>
+				<td>Humidity:</td>
+				<td id="humidity"></td>
+			</tr>
+
+			<tr>
+				<td>Wind Speed:</td>
+				<td id="windSpeed"></td>
+			</tr>
+		</table>
+	<script src="weather.js"></script>
+
+</body>
+</html>

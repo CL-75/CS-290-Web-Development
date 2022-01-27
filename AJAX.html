@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title> AJAX Interactions</title>
+</head>
+<body>
+	<script src="AJAX.js"></script>
+	<section>
+		<form>
+			<fieldset>
+				<legend> Open Weather Map</legend>
+				<label>Please Enter a City and Country Code or Zip Code</label>
+				<fieldset>
+					<p>
+						<label>Zip Code: <input type="text" name="zipCode" id="zip" size="9"></label>
+					</p>
+					<p>
+						<label>City: <input type="text" name="city" id="city" size="30"></label>
+					</p>
+
+					<p>
+						<input type="submit" name="submit" id="getWeather">
+					</p>
+				</fieldset>
+			</fieldset>
+		</form>
+
+		<table>
+			<caption>
+				<th>Weather Results</th>
+			</caption>
+			<tr>
+				<td>Temperature:</td>
+				<td id="temp">Console</td>
+			</tr>
+
+			<tr>
+				<td>Humidity:</td>
+				<td id="humidity">Console</td>
+			</tr>
+
+			<tr>
+				<td>Wind Speed:</td>
+				<td id="windSpeed">Console</td>
+			</tr>
+		</table>
+			<br></br>
+		<section>
+			<form>
+				<fieldset>
+					<label>Please Enter Your Favorite Color and Shape</label>
+					<fieldset>
+						<p>
+							<label>Favorite Color: <input type="text" name="colorName" id="color" size="30"></label>
+						</p>
+						<p>
+							<label>Favorite Shape: <input type="text" name="shapeName" id="shape" size="30"></label>
+						</p>
+						<p>
+							<input type="submit" name="submit" id="submitInfo">
+						</p>
+					</fieldset>
+				</fieldset>
+			</form>
+		
+		<table>
+			<caption>
+				<th>Favorites Results</th>
+			</caption>
+			<tr>
+				<td>Favorite Color:</td>
+				<td id="favColor"></td>
+			</tr>
+
+			<tr>
+				<td>Favorite Shape:</td>
+				<td id="favShape"></td>
+			</tr>
+		</table>
+</body>
+</html>
